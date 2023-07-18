@@ -24,7 +24,7 @@ README = readme(root_path)
 
 config = {
     'name': 'pyclifford',
-    'packages': find_packages(exclude=['doc']),
+    'packages': ['pyclifford'],
     'description': 'Clifford Gate Circuit Simulation',
     'long_description': README,
     'long_description_content_type' : 'text/x-rst',
@@ -42,7 +42,7 @@ config = {
 
 config2 = {
     'name': 'torchclifford',
-    'packages': find_packages(exclude=['doc']),
+    'packages': ['torchclifford'],
     'description': 'Clifford Gate Circuit Simulation',
     'long_description': README,
     'long_description_content_type' : 'text/x-rst',
@@ -58,4 +58,4 @@ config2 = {
 }
 
 setup(**config)
-setup(**config2)
+#setup(**config2)
